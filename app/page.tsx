@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="p-6 space-y-6">
       <Header title={'Dashboard'} />
-      <main className="flex-1">
+      <main className="flex-1 w-full">
         <DashboardContent />
       </main>
     </div>

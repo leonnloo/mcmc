@@ -1,4 +1,5 @@
 // Register the necessary elements for Chart.js
+import { DelaysByRegionChart } from '@/components/dashboard/top-delay-regions';
 import { AverageDeliveryTime } from '@/components/delay/average-time';
 import { DelaysByCourier } from '@/components/delay/delay-by-courier';
 import { DelaysByRegion } from '@/components/delay/delay-by-region';
@@ -53,9 +54,13 @@ export default function ShipmentDelay() {
           <DelaysByRegion regions={regions} delays={delays} />
         </div>
       </div>
-      <div className="w-full">
-
-        <DelaysByCourier />
+      <div className="flex w-full gap-2">
+        <div className="w-full">
+          <DelaysByRegionChart />
+        </div>
+        <div className="w-full">
+          <DelaysByCourier />
+        </div>
       </div>
     </div>
   );
