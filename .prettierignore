@@ -1,0 +1,6 @@
+node_modules
+.next
+.vscode
+package.json
+.env
+README.md
