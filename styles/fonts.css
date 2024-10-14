@@ -1,0 +1,12 @@
+/* styles/fonts.css */
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: normal;
+  font-style: normal;
+  /* src: url('path/to/font.woff'); */
+}
+
+/* Apply the Impact font globally */
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
