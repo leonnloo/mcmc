@@ -1,14 +1,13 @@
-import DashboardContent from "@/components/dashboard-content";
-import Header from "@/components/header";
+import DashboardContent from '@/components/dashboard-content';
+import Header from '@/components/header';
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="p-6 space-y-6">
       <Header title={'Dashboard'} />
-      <main className="flex-1 bg-gray-100 p-6">
-          <DashboardContent />
-          
-        </main>
+      <main className="flex-1">
+        <DashboardContent />
+      </main>
     </div>
   );
 }

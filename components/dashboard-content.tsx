@@ -1,6 +1,7 @@
 import React from 'react';
 import { ShipmentStatistics } from './dashboard/shipment-stats';
 import { RegionComparison } from './geo/region-compare';
+import { DelaysByRegionChart } from './dashboard/top-delay-regions';
 
 // src/components/DashboardContent.tsx
 const DashboardContent = () => {
@@ -14,6 +15,7 @@ const DashboardContent = () => {
         totalShipments={300500}
       />
       <RegionComparison />
+      <DelaysByRegionChart />
     </div>
   );
 };

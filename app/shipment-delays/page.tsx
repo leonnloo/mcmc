@@ -1,5 +1,6 @@
 // Register the necessary elements for Chart.js
 import { AverageDeliveryTime } from '@/components/delay/average-time';
+import { DelaysByCourier } from '@/components/delay/delay-by-courier';
 import { DelaysByRegion } from '@/components/delay/delay-by-region';
 import { OnTimeVsDelayedChart } from '@/components/delay/ontime-vs-delayed';
 import Header from '@/components/header';
@@ -36,12 +37,11 @@ export default function ShipmentDelay() {
   const delays = [1.87, 1.67, 1.65, 1.8, 1.74];
 
   return (
-    <div className="p-6 space-y-6">
+    <div className="p-6 space-y-6 w-full">
       <Header title={'Shipment Delays'} />
 
       {/* Average Delivery Time */}
       <AverageDeliveryTime averageTime={averageTime} />
-
       <div className="flex w-full gap-2">
         {/* On-Time vs Delayed Deliveries */}
         <div className="w-full">
@@ -52,6 +52,10 @@ export default function ShipmentDelay() {
         <div className="w-full">
           <DelaysByRegion regions={regions} delays={delays} />
         </div>
+      </div>
+      <div className="w-full">
+
+        <DelaysByCourier />
       </div>
     </div>
   );
