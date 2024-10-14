@@ -36,7 +36,7 @@ export const Predict = () => {
 
   const getPrediction = async () => {
     if (!shippingDate || !expectedArrivalDate) {
-    //   alert('Please select shipping and expected arrival dates');
+      //   alert('Please select shipping and expected arrival dates');
       return;
     }
 
@@ -230,7 +230,7 @@ export const Predict = () => {
                 Prediction Result
               </CardTitle>
               <div className="text-center font-bold bg-black text-white mt-2">
-                {prediction} Days
+                {Math.ceil(prediction)} Days
               </div>
             </Card>
           )}
