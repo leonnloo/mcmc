@@ -33,7 +33,7 @@ import Image, { StaticImageData } from 'next/image';
 export default function ShipmentDelay() {
   // List of companies
   const companies = [
-    'Yei Express',
+    'Yeti Express',
     'Courier Crew',
     'Global Swift',
     'Power Parcel',
