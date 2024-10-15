@@ -37,6 +37,14 @@ export function Sidebar() {
             <FaMapMarkerAlt className="mr-3" />
             <span>Geographical Demand</span>
         </Link>
+        <Link
+          href="/monthly-prediction"
+          className={`flex items-center py-2 px-6 hover:bg-gray-700 hover:bg-opacity-25 ${selected === 'Geographical Demand' ? 'bg-gray-700 bg-opacity-25' : ''}`}
+          onClick={() => setSelected('Geographical Demand')}
+        >
+            <FaMapMarkerAlt className="mr-3" />
+            <span>Monthly Prediction</span>
+        </Link>
       </nav>
     </div>
   );
