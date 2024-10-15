@@ -22,20 +22,12 @@ export function Sidebar() {
           <span>Dashboard</span>
         </Link>
         <Link
-          href="/shipment-delays"
-          className={`flex items-center py-2 px-6 hover:bg-gray-700 hover:bg-opacity-25 ${selected === 'Shipment Delays' ? 'bg-gray-700 bg-opacity-25' : ''}`}
-          onClick={() => setSelected('Shipment Delays')}
+          href="/delivery-prediction"
+          className={`flex items-center py-2 px-6 hover:bg-gray-700 hover:bg-opacity-25 ${selected === 'Delivery Prediction' ? 'bg-gray-700 bg-opacity-25' : ''}`}
+          onClick={() => setSelected('Delivery Prediction')}
         >
             <FaChartBar className="mr-3" />
-            <span>Shipment Delays</span>
-        </Link>
-        <Link
-          href="/geographical-demand"
-          className={`flex items-center py-2 px-6 hover:bg-gray-700 hover:bg-opacity-25 ${selected === 'Geographical Demand' ? 'bg-gray-700 bg-opacity-25' : ''}`}
-          onClick={() => setSelected('Geographical Demand')}
-        >
-            <FaMapMarkerAlt className="mr-3" />
-            <span>Geographical Demand</span>
+            <span>Delivery Prediction</span>
         </Link>
         <Link
           href="/monthly-prediction"
@@ -43,7 +35,7 @@ export function Sidebar() {
           onClick={() => setSelected('Geographical Demand')}
         >
             <FaMapMarkerAlt className="mr-3" />
-            <span>Monthly Prediction</span>
+            <span>Demand Prediction</span>
         </Link>
       </nav>
     </div>

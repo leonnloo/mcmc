@@ -126,7 +126,7 @@ export const Predict = () => {
       <Card className="w-full p-6 shadow-lg">
         <CardHeader>
           <CardTitle className="text-center text-2xl">
-            Shipment Delay Prediction
+            Delivery Prediction
           </CardTitle>
           <div className="mt-4 space-y-4">
             {/* Number of Items */}

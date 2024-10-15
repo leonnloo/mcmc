@@ -44,7 +44,7 @@ export const MonthlyPredict = () => {
       <Card className="w-full p-6 shadow-lg">
         <CardHeader>
           <CardTitle className="text-center text-2xl">
-            Monthly Prediction for 2025
+            Monthly Demand Prediction for 2025
           </CardTitle>
           <div className="mt-4 space-y-4">
             {/* Destination State Dropdown */}
