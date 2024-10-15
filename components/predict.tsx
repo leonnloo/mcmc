@@ -10,7 +10,10 @@ import { DatePicker } from './ui/datepicker';
 import { useLoadScript, Autocomplete } from '@react-google-maps/api';
 
 export const Predict = () => {
-  const [prediction, setPrediction] = useState(null);
+  const [predictionPP, setPredictionPP] = useState(null);
+  const [predictionCC, setPredictionCC] = useState(null);
+  const [predictionYeti, setPredictionYeti] = useState(null);
+  const [predictionGS, setPredictionGS] = useState(null);
   const [noOfItems, setNoOfItems] = useState(1);
   const [shippingDate, setShippingDate] = useState<Date | undefined>();
   const [expectedArrivalDate, setExpectedArrivalDate] = useState<
@@ -80,7 +83,10 @@ export const Predict = () => {
     });
 
     const data = await response.json();
-    setPrediction(data.prediction);
+    setPredictionPP(data.predictionPP);
+    setPredictionCC(data.predictionCC);
+    setPredictionGS(data.predictionGS);
+    setPredictionYeti(data.predictionYeti);
   };
 
   const onStartingPlaceChanged = () => {
@@ -174,7 +180,7 @@ export const Predict = () => {
               </Autocomplete>
             </div>
 
-            {/* Shipping Date Picker */}
+            {/* ShiYetiing Date Picker */}
             <div className="flex w-full gap-x-5">
               <div className="flex flex-col">
                 <label className="text-gray-600">Shipping Date</label>
@@ -224,13 +230,23 @@ export const Predict = () => {
             Get Prediction
           </Button>
           <Separator />
-          {prediction !== null && (
+          {predictionPP !== null &&
+          predictionCC !== null &&
+          predictionYeti !== null &&
+          predictionGS !== null &&
+          (
             <Card className="p-4 bg-blue-50">
               <CardTitle className="text-center text-xl text-gray-700">
                 Prediction Result
               </CardTitle>
-              <div className="text-center font-bold bg-black text-white mt-2">
-                {Math.ceil(prediction)} Days
+              <div className="text-center font-bold mt-2">
+                Yeti Express: {Math.ceil(predictionYeti)} Days
+                <br />
+                Courier Crew: {Math.ceil(predictionCC)} Days
+                <br />
+                Global Swift: {Math.ceil(predictionGS)} Days
+                <br />
+                Power Parcel: {Math.ceil(predictionPP)} Days
               </div>
             </Card>
           )}

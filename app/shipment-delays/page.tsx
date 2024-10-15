@@ -22,6 +22,13 @@ import Average_Number_of_Deliveries_by_Region_GS from '@/public/GS/Average Numbe
 import Number_of_Delays_by_Year_GS from '@/public/GS/Number of Delays by Year (2022-2024), Grouped by Month.png';
 import Number_of_Delivery_by_Year_GS from '@/public/GS/Number of Deliveries Made by Year (2022-2024), Grouped by Month.png';
 import Success_Rate_GS from '@/public/GS/Success Rate of Deliveries by Year (Based on First Attempt and No Delay) (2022-2024).png';
+
+import Average_Delivery_Days_by_Destination_Region_PP from '@/public/PP/Average Delivery Days by Destination Region.png';
+import Average_Delivery_Days_by_Type_of_Item_PP from '@/public/PP/Average Delivery Days by Type of Item.png';
+import Average_Number_of_Deliveries_by_Region_PP from '@/public/PP/Average Number of Deliveries by Region.png';
+import Number_of_Delays_by_Year_PP from '@/public/PP/Number of Delays by Year (2022-2024), Grouped by Month.png';
+import Number_of_Delivery_by_Year_PP from '@/public/PP/Number of Deliveries Made by Year (2022-2024), Grouped by Month.png';
+import Success_Rate_PP from '@/public/PP/Success Rate of Deliveries by Year (Based on First Attempt and No Delay) (2022-2024).png';
 import Image, { StaticImageData } from 'next/image';
 export default function ShipmentDelay() {
   // List of companies
@@ -114,12 +121,12 @@ export default function ShipmentDelay() {
         {selectedCompany === 'Power Parcel' && (
           <div className="w-full">
             <Content
-              img1={Average_Delivery_Days_by_Destination_Region_Yeti}
-              img2={Average_Delivery_Days_by_Type_of_Item_Yeti}
-              img3={Average_Number_of_Deliveries_by_Region_Yeti}
-              img4={Number_of_Delays_by_Year_Yeti}
-              img5={Number_of_Delivery_by_Year_Yeti}
-              img6={Success_Rate_Yeti}
+              img1={Average_Delivery_Days_by_Destination_Region_PP}
+              img2={Average_Delivery_Days_by_Type_of_Item_PP}
+              img3={Average_Number_of_Deliveries_by_Region_PP}
+              img4={Number_of_Delays_by_Year_PP}
+              img5={Number_of_Delivery_by_Year_PP}
+              img6={Success_Rate_PP}
             />
           </div>
         )}
