@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShipmentStatistics } from './dashboard/shipment-stats';
+// import { ShipmentStatistics } from './dashboard/shipment-stats';
 import { Predict } from './predict';
 
 // src/components/DashboardContent.tsx
@@ -10,12 +10,12 @@ const DashboardContent = () => {
       <div className="col-span-1 md:col-span-2 lg:col-span-3 w-full">
         <Predict />
       </div>
-      <ShipmentStatistics
+      {/* <ShipmentStatistics
         delayedPercentage={40}
         documentCount={200000}
         parcelCount={100500}
         totalShipments={300500}
-      />
+      /> */}
     </div>
   );
 };
